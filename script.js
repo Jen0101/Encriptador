@@ -49,9 +49,9 @@ function desencriptar(stringDesencriptada){
 }
 
 function copiar(){
-    const contenedorResultado = mensaje(textoResultado.value)
-    mensaje.value = contenedorResultado    
-    textoResultado.value = "";
+    const contenedorResultado = mensaje(resultado.value)
+    mensaje.value = resultado    
+    resultado.value = "";
 
 }
 
