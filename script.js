@@ -48,10 +48,11 @@ function desencriptar(stringDesencriptada){
     return stringDesencriptada
 }
 
-
-
 function copiar(){
-    var contenido = text-area;
-    contenido.select();
-    document.exe
+    const contenedorResultado = mensaje(textoResultado.value)
+    mensaje.value = contenedorResultado    
+    textoResultado.value = "";
+
 }
+
+
