@@ -1,6 +1,6 @@
 const textArea = document.querySelector(".text-area");
 const mensaje = document.querySelector(".mensaje");
-var resultado = document.querySelector(".textoResultado");
+
 
 
 
@@ -48,11 +48,11 @@ function desencriptar(stringDesencriptada){
     return stringDesencriptada
 }
 
-function copiar(){
-    const contenedorResultado = mensaje(resultado.value)
-    mensaje.value = resultado    
-    resultado.value = "";
 
+function btnCopiar(){
+    const textoCopiado = mensaje.value;
+    navigator.clipboard.writeText(textoCopiado);
+    mensaje.value = ""
 }
 
 
